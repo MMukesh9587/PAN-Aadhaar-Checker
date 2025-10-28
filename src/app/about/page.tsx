@@ -1,7 +1,7 @@
 
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
-import { ShieldCheck, Users, Info } from 'lucide-react';
+import { ShieldCheck, Users, Info, HelpCircle, Target } from 'lucide-react';
 import Link from 'next/link';
 import { ThemeToggle } from '@/components/theme-toggle';
 
@@ -43,18 +43,40 @@ export default function AboutPage() {
             </p>
         </header>
 
-        <article className="prose prose-lg dark:prose-invert max-w-none space-y-6">
+        <article className="prose prose-lg dark:prose-invert max-w-none space-y-8">
           <div className="flex justify-center">
              <Users className="h-24 w-24 text-primary" />
           </div>
-          <h2 className="font-headline text-2xl sm:text-3xl font-bold tracking-tight text-primary">हमारा मिशन</h2>
-          <p>
+          <h2 className="font-headline text-2xl sm:text-3xl font-bold tracking-tight text-primary flex items-center justify-center gap-3">
+            <Target className="h-7 w-7" />
+            हमारा मिशन
+          </h2>
+          <p className="text-center">
             हमारा मिशन भारत के नागरिकों को पैन और आधार से संबंधित जानकारी और सेवाओं तक आसान पहुँच प्रदान करना है। हम जटिल सरकारी प्रक्रियाओं को सरल बनाने और महत्वपूर्ण जानकारी को सुलभ बनाने का प्रयास करते हैं ताकि हर कोई अपने वित्तीय अधिकारों और कर्तव्यों को आसानी से समझ सके।
           </p>
-          <h2 className="font-headline text-2xl sm:text-3xl font-bold tracking-tight text-primary">हम क्या करते हैं?</h2>
+          
+          <h2 className="font-headline text-2xl sm:text-3xl font-bold tracking-tight text-primary flex items-center justify-center gap-3">
+            <HelpCircle className="h-7 w-7" />
+            यह वेबसाइट क्यों बनाई गई?
+          </h2>
           <p>
-            यह वेबसाइट एक अनौपचारिक उपकरण प्रदान करती है जो उपयोगकर्ताओं को उनके पैन-आधार लिंकिंग की स्थिति की जांच करने में मदद करता है। इसके अलावा, हम पैन कार्ड, आधार कार्ड, आयकर और अन्य संबंधित विषयों पर विस्तृत गाइड, लेख और नवीनतम अपडेट प्रदान करते हैं। हमारा लक्ष्य आपको विश्वसनीय और आसानी से समझ में आने वाली जानकारी देना है।
+            हमने देखा कि बहुत से लोगों को पैन और आधार कार्ड से जुड़ी प्रक्रियाओं, जैसे कि लिंकिंग, सुधार, या स्टेटस जांचने में कठिनाई होती है। आधिकारिक वेबसाइटों पर जानकारी अक्सर जटिल भाषा में होती है और उसे समझना मुश्किल हो सकता है। इसी समस्या को हल करने के लिए, हमने यह प्लेटफ़ॉर्म बनाया है जहाँ हम सभी जानकारी को सरल, स्पष्ट और स्टेप-बाय-स्टेप गाइड के रूप में प्रस्तुत करते हैं। हमारा लक्ष्य तकनीकी और गैर-तकनीकी दोनों तरह के उपयोगकर्ताओं के लिए एक विश्वसनीय स्रोत बनना है।
           </p>
+
+          <h2 className="font-headline text-2xl sm:text-3xl font-bold tracking-tight text-primary flex items-center justify-center gap-3">
+            <Info className="h-7 w-7" />
+            हम आपकी कैसे मदद करते हैं?
+          </h2>
+          <p>
+            यह वेबसाइट एक अनौपचारिक सूचना केंद्र के रूप में कार्य करती है। हम निम्नलिखित तरीकों से आपकी मदद करते हैं:
+          </p>
+          <ul className="list-disc space-y-2 pl-5">
+            <li><strong>स्टेटस जांचने की गाइड:</strong> हम आपको पैन-आधार लिंकिंग स्टेटस ऑनलाइन और SMS के माध्यम से जांचने के आसान तरीके बताते हैं।</li>
+            <li><strong>विस्तृत ब्लॉग पोस्ट:</strong> हम पैन कार्ड के लिए आवेदन करने, उसमें सुधार करने, e-PAN डाउनलोड करने, और अन्य संबंधित विषयों पर विस्तृत लेख और नवीनतम अपडेट प्रदान करते हैं।</li>
+            <li><strong>सरल भाषा:</strong> हमारी सभी गाइड और लेख सरल हिंदी भाषा में लिखे गए हैं ताकि कोई भी उन्हें आसानी से समझ सके।</li>
+            <li><strong>एक ही स्थान पर जानकारी:</strong> आपको अलग-अलग वेबसाइटों पर भटकने की जरूरत नहीं है; हम पैन और आधार से जुड़ी सभी महत्वपूर्ण जानकारी एक ही स्थान पर लाने का प्रयास करते हैं।</li>
+          </ul>
+
 
           <div className="text-center py-6 mt-8 text-sm text-muted-foreground">
             <p><strong>अस्वीकरण (Disclaimer):</strong> यह एक अनौपचारिक वेबसाइट है और इसका भारत सरकार या किसी सरकारी एजेंसी से कोई संबंध नहीं है। हम केवल सूचनात्मक उद्देश्यों के लिए जानकारी और उपकरण प्रदान करते हैं। हमेशा आधिकारिक जानकारी के लिए सरकारी वेबसाइटों को देखें।</p>
