@@ -138,8 +138,8 @@ export default function PanCardCorrectionPost() {
           
           <div className="relative w-full h-56 sm:h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="https://picsum.photos/seed/12/1080/720"
-              alt="Person correcting a form online"
+              src="https://images.unsplash.com/photo-1518893560155-b89cac6db0c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkb2N1bWVudCUyMGNvcnJlY3Rpb258ZW58MHx8fHwxNzYxNjI1MDU3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+              alt="Person holding a pen to correct a document"
               fill
               style={{ objectFit: 'cover' }}
               data-ai-hint="document correction"
