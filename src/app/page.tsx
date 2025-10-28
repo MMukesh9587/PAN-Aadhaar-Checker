@@ -4,9 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink, MessageSquareText, MousePointerClick, ShieldCheck } from 'lucide-react';
 import Image from 'next/image';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
+import Link from 'next/link';
 
 export default function Home() {
-  const blogPosts = PlaceHolderImages.filter(img => img.id.startsWith("blog-"));
 
   return (
     <>
@@ -19,7 +19,7 @@ export default function Home() {
             </h2>
           </div>
           <Button variant="ghost" asChild>
-            <a href="#blog">Blog</a>
+            <Link href="/blog">Blog</Link>
           </Button>
         </div>
       </header>
@@ -95,34 +95,6 @@ export default function Home() {
             </Card>
           </article>
             
-          <section id="blog" className="mt-16 scroll-mt-20">
-            <h2 className="text-3xl font-bold text-center font-headline text-primary mb-8">अन्य महत्वपूर्ण जानकारी</h2>
-            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-              {blogPosts.map((post) => (
-                <Card key={post.id} className="overflow-hidden shadow-lg flex flex-col">
-                   <div className="relative w-full h-48">
-                    <Image
-                      src={post.imageUrl}
-                      alt={post.description}
-                      fill
-                      style={{ objectFit: 'cover' }}
-                      data-ai-hint={post.imageHint}
-                    />
-                  </div>
-                  <CardHeader>
-                    <CardTitle className='font-headline text-xl'>{post.description}</CardTitle>
-                  </CardHeader>
-                  <CardContent className="flex-grow">
-                    <p className="text-muted-foreground text-sm">यह एक डमी पोस्ट है। यहां पोस्ट का संक्षिप्त विवरण आएगा।</p>
-                  </CardContent>
-                  <div className="p-6 pt-0">
-                    <Button variant="outline">और पढ़ें</Button>
-                  </div>
-                </Card>
-              ))}
-            </div>
-          </section>
-
           <div className="text-center py-6 mt-8 text-sm text-muted-foreground">
             <p><strong>अस्वीकरण (Disclaimer):</strong> यह एक अनौपचारिक गाइड है और केवल सूचनात्मक उद्देश्यों के लिए है। कृपया हमेशा आधिकारिक आयकर विभाग की वेबसाइट से जानकारी की पुष्टि करें।</p>
           </div>
