@@ -38,8 +38,8 @@
     {
       "id": "blog-6",
       "description": "पैन कार्ड में सुधार कैसे करें: एक विस्तृत गाइड",
-      "imageUrl": "https://images.unsplash.com/photo-1518893560155-b89cac6db0c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkb2N1bWVudCUyMGNvcnJlY3Rpb258ZW58MHx8fHwxNzYxNjI1MDU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "document correction",
+      "imageUrl": "https://images.unsplash.com/photo-1579621970795-87f5a7a1b1e3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYXBlciUyMHdvcmt8ZW58MHx8fHwxNzYxNjI5MzAyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "paper work",
       "url": "/blog/pan-card-correction"
     },
     {
@@ -69,6 +69,13 @@
       "imageUrl": "https://images.unsplash.com/photo-1620714223084-8fcacc6dfd8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxpZGVudGl0eSUyMGRvY3VtZW50fGVufDB8fHx8MTc2NDA0Mzk2Nnww&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "identity document",
       "url": "/blog/what-is-pan-card"
+    },
+    {
+      "id": "blog-11",
+      "description": "पैन कार्ड 2.0 क्या है? नए डिजिटल पैन कार्ड के फायदे और भविष्य",
+      "imageUrl": "https://images.unsplash.com/photo-1526628953301-3e589a6a8b74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxkaWdpdGFsJTIwaWRlbnRpdHl8ZW58MHx8fHwxNzY0MDgxNDgxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "digital identity",
+      "url": "/blog/pan-card-2-0"
     }
   ]
 }
