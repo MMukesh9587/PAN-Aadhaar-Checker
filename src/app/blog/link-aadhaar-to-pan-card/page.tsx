@@ -2,7 +2,7 @@
 import type { Metadata } from 'next';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { ExternalLink, CheckCircle, AlertCircle, MessageSquare, Info, Smartphone } from 'lucide-react';
+import { ExternalLink, CheckCircle, AlertCircle, MessageSquare, Info, Smartphone, User, Calendar } from 'lucide-react';
 import Image from 'next/image';
 
 export const metadata: Metadata = {
@@ -35,8 +35,8 @@ const jsonLd = {
   'description': 'यह विस्तृत गाइड आपको पैन को आधार से लिंक करने की ऑनलाइन प्रक्रिया, फीस भुगतान, SMS विधि, और स्टेटस जांचने के बारे में पूरी जानकारी देती है।',
   'image': 'https://images.unsplash.com/photo-1614741118884-85348d3b798b?w=1080&q=80&fit=max',  
   'author': {
-    '@type': 'Organization',
-    'name': 'Unofficial PAN-Aadhaar Checker',
+    '@type': 'Person',
+    'name': 'Mukesh Kumar Yogi',
   },  
   'publisher': {
     '@type': 'Organization',
@@ -104,6 +104,12 @@ const jsonLd = {
 
 
 export default function LinkAadhaarToPanPost() {
+  const publicationDate = new Date().toLocaleDateString('hi-IN', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+  
   return (
     <main className="flex w-full flex-col items-center bg-background p-4 sm:p-6 md:p-8">
       <script
@@ -115,7 +121,17 @@ export default function LinkAadhaarToPanPost() {
             <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl">
               PAN कार्ड को Aadhaar से कैसे लिंक करें: एक विस्तृत गाइड (2024)
             </h1>
-            <p className="mt-3 max-w-3xl mx-auto text-muted-foreground md:text-lg">
+            <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
+                <div className="flex items-center gap-2">
+                    <User className="h-4 w-4" />
+                    <span>लेखक: मुकेश कुमार योगी</span>
+                </div>
+                <div className="flex items-center gap-2">
+                    <Calendar className="h-4 w-4" />
+                    <span>प्रकाशित: {publicationDate}</span>
+                </div>
+            </div>
+            <p className="mt-4 max-w-3xl mx-auto text-muted-foreground md:text-lg">
               इस स्टेप-बाय-स्टेप गाइड से सीखें कि अपने पैन को आधार से ऑनलाइन और SMS के जरिए कैसे लिंक करें, लेट फीस का भुगतान कैसे करें, और लिंकिंग स्टेटस कैसे जांचें।
             </p>
         </header>
@@ -272,5 +288,3 @@ export default function LinkAadhaarToPanPost() {
     </main>
   );
 }
-
-    
