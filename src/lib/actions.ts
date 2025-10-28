@@ -31,9 +31,9 @@ export async function checkLinkStatus(
     const lastAadhaarDigit = parseInt(aadhaar.slice(-1));
 
     if ([0, 1, 2, 3].includes(lastAadhaarDigit)) {
-      return { status: 'Linked', message: 'Your PAN and Aadhaar are successfully linked.', pan, aadhaar };
+      return { status: 'Linked', message: '✅ Your PAN is linked with Aadhaar.', pan, aadhaar };
     } else if ([4, 5, 6].includes(lastAadhaarDigit)) {
-      return { status: 'Not Linked', message: 'Your PAN and Aadhaar are not linked. Please visit the e-Filing portal to link them.', pan, aadhaar };
+      return { status: 'Not Linked', message: '❌ Your PAN is not linked yet. Please visit the e-Filing portal to link them.', pan, aadhaar };
     } else if ([7, 8].includes(lastAadhaarDigit)) {
       return { status: 'Pending', message: 'Your Aadhaar-PAN linking request has been sent to UIDAI for validation. Please check the status later.', pan, aadhaar };
     } else {

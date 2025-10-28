@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { CheckCircle2, XCircle, AlertTriangle, Clock, Bot } from 'lucide-react';
 
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { cn } from '@/lib/utils';
@@ -79,6 +79,13 @@ export function StatusDisplay({ result }: StatusDisplayProps) {
                     <Badge variant="secondary" className="w-20 justify-center">Aadhaar</Badge>
                     <span className="font-mono tracking-wider">{result.aadhaar}</span>
                 </div>
+            )}
+            {result.status === 'Not Linked' && (
+              <div className="pt-2">
+                  <Button onClick={() => window.open('https://eportal.incometax.gov.in/iec/foservices/#/pre-login/bl-link-aadhaar', '_blank')} size="sm">
+                      Link Now
+                  </Button>
+              </div>
             )}
             {result.status === 'Error' && (
               <div className="pt-2">

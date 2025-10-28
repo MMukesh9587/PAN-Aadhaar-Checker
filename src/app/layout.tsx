@@ -3,8 +3,9 @@ import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
 export const metadata: Metadata = {
-  title: 'PAN-Aadhaar Link Status',
-  description: 'Online PAN-Aadhaar Link Checker',
+  title: 'Online PAN-Aadhaar Link Checker (Unofficial)',
+  description: 'Check your PAN-Aadhaar linking status instantly with this unofficial tool. Verify if your PAN is linked with Aadhaar for educational and demo purposes. Keywords: check pan aadhaar link, pan aadhaar status, pan aadhaar link checker online, Unofficial PAN-Aadhaar Checker.',
+  keywords: "check pan aadhaar link, pan aadhaar status, pan aadhaar link checker online, Unofficial PAN-Aadhaar Checker",
 };
 
 export default function RootLayout({

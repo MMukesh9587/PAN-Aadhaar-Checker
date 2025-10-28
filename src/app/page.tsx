@@ -10,10 +10,10 @@ export default function Home() {
           <ShieldCheck className="h-12 w-12 text-primary" />
         </div>
         <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl">
-          PAN-Aadhaar Link Status
+          Online PAN-Aadhaar Link Checker
         </h1>
         <p className="mt-3 max-w-md text-muted-foreground md:text-lg">
-          Verify if your PAN is linked with your Aadhaar in seconds.
+          Verify if your PAN is linked with your Aadhaar. (Unofficial)
         </p>
       </div>
 
