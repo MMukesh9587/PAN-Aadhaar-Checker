@@ -17,6 +17,7 @@ export default function Home() {
               Unofficial PAN-Aadhaar Checker
             </h2>
           </div>
+          <Button variant="ghost">Blog</Button>
         </div>
       </header>
       <main className="flex min-h-dvh w-full flex-col items-center bg-background p-4 sm:p-6 md:p-8">
