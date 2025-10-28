@@ -5,11 +5,10 @@ import { ExternalLink, MessageSquareText, MousePointerClick, ShieldCheck } from 
 import Link from 'next/link';
 import { ThemeToggle } from '@/components/theme-toggle';
 import type { Metadata } from 'next';
-import { LinkChecker } from '@/components/link-checker';
 
 export const metadata: Metadata = {
   title: 'पैन-आधार लिंकिंग स्टेटस ऑनलाइन चेक करें | Check PAN-Aadhaar Link Status (Unofficial)',
-  description: 'अपने पैन कार्ड का आधार से लिंकिंग स्टेटस तुरंत ऑनलाइन और SMS के माध्यम से जांचें। यह एक अनौपचारिक टूल है जो आपको पैन-आधार लिंकिंग की स्थिति जानने में मदद करता है।',
+  description: 'अपने पैन कार्ड का आधार से लिंकिंग स्टेटस तुरंत ऑनलाइन और SMS के माध्यम से जांचें। यह एक अनौपचारिक टूल है जो आपको पैन-आधार लिinking की स्थिति जानने में मदद करता है।',
   keywords: 'pan aadhaar link status, check pan aadhaar status, pan aadhaar link online, पैन आधार लिंक स्टेटस, पैन आधार लिंक कैसे चेक करें, unofficial pan aadhaar checker, pan aadhaar link, aadhaar pan link',
   alternates: {
     canonical: '/',
@@ -57,13 +56,9 @@ export default function Home() {
               PAN-Aadhaar लिंकिंग स्टेटस कैसे चेक करें?
             </h1>
             <p className="mt-3 max-w-2xl mx-auto text-muted-foreground sm:text-base md:text-lg">
-             नीचे दिए गए बॉक्स में अपना पैन और आधार नंबर दर्ज करके तुरंत लिंकिंग स्थिति की जांच करें या अन्य तरीकों के बारे में जानें।
+             विभिन्न तरीकों से तुरंत लिंकिंग स्थिति की जांच करें।
             </p>
           </header>
-
-          <div className="flex justify-center">
-            <LinkChecker />
-          </div>
 
           <article className="space-y-8 mt-12">
 
