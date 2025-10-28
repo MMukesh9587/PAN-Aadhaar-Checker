@@ -32,7 +32,12 @@ export default function BlogLayout({
       </header>
       {children}
       <footer className="w-full bg-card border-t">
-        <div className="max-w-5xl mx-auto py-4 px-4 text-center text-sm text-muted-foreground">
+        <div className="max-w-5xl mx-auto py-6 px-4 text-center text-sm text-muted-foreground">
+          <div className="flex justify-center gap-4 mb-4">
+            <Link href="/about" className="hover:text-primary">About</Link>
+            <Link href="/privacy-policy" className="hover:text-primary">Privacy Policy</Link>
+            <Link href="/terms-and-conditions" className="hover:text-primary">Terms & Conditions</Link>
+          </div>
           <p>© {new Date().getFullYear()} Unofficial PAN-Aadhaar Checker. All Rights Reserved.</p>
            <p className="mt-2">
             For official information, please visit the 

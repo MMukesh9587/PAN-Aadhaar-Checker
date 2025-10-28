@@ -5,6 +5,7 @@ import { ExternalLink, MessageSquareText, MousePointerClick, ShieldCheck } from 
 import Link from 'next/link';
 import { ThemeToggle } from '@/components/theme-toggle';
 import type { Metadata } from 'next';
+import { LinkChecker } from '@/components/link-checker';
 
 export const metadata: Metadata = {
   title: 'पैन-आधार लिंकिंग स्टेटस ऑनलाइन चेक करें | Check PAN-Aadhaar Link Status (Unofficial)',
@@ -56,11 +57,15 @@ export default function Home() {
               PAN-Aadhaar लिंकिंग स्टेटस कैसे चेक करें?
             </h1>
             <p className="mt-3 max-w-2xl mx-auto text-muted-foreground sm:text-base md:text-lg">
-              जानें ऑनलाइन और SMS के माध्यम से अपने पैन कार्ड को आधार से लिंक करने की स्थिति की जाँच करने के आसान तरीके।
+             नीचे दिए गए बॉक्स में अपना पैन और आधार नंबर दर्ज करके तुरंत लिंकिंग स्थिति की जांच करें या अन्य तरीकों के बारे में जानें।
             </p>
           </header>
 
-          <article className="space-y-8">
+          <div className="flex justify-center">
+            <LinkChecker />
+          </div>
+
+          <article className="space-y-8 mt-12">
 
              <div className="prose prose-lg dark:prose-invert max-w-none text-center">
               <p>
@@ -134,7 +139,12 @@ export default function Home() {
         </div>
       </main>
       <footer className="w-full bg-card border-t">
-        <div className="max-w-5xl mx-auto py-4 px-4 text-center text-sm text-muted-foreground">
+        <div className="max-w-5xl mx-auto py-6 px-4 text-center text-sm text-muted-foreground">
+           <div className="flex justify-center gap-4 mb-4">
+            <Link href="/about" className="hover:text-primary">About</Link>
+            <Link href="/privacy-policy" className="hover:text-primary">Privacy Policy</Link>
+            <Link href="/terms-and-conditions" className="hover:text-primary">Terms & Conditions</Link>
+          </div>
           <p>© {new Date().getFullYear()} Unofficial PAN-Aadhaar Checker. All Rights Reserved.</p>
            <p className="mt-2">
             For official information, please visit the 
