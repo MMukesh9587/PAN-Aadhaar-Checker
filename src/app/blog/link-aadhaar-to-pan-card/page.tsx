@@ -119,7 +119,7 @@ export default function LinkAadhaarToPanPost() {
       />
       <div className="w-full max-w-4xl mx-auto">
         <header className="text-center my-8 md:my-12">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl">
+            <h1 className="font-headline text-3xl sm:text-4xl font-bold tracking-tighter text-primary md:text-5xl">
               PAN कार्ड को Aadhaar से कैसे लिंक करें: एक विस्तृत गाइड (2024)
             </h1>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
@@ -132,14 +132,14 @@ export default function LinkAadhaarToPanPost() {
                     <span>प्रकाशित: {publicationDate}</span>
                 </div>
             </div>
-            <p className="mt-4 max-w-3xl mx-auto text-muted-foreground md:text-lg">
+            <p className="mt-4 max-w-3xl mx-auto text-muted-foreground sm:text-base md:text-lg">
               इस स्टेप-बाय-स्टेप गाइड से सीखें कि अपने पैन को आधार से ऑनलाइन और SMS के जरिए कैसे लिंक करें, लेट फीस का भुगतान कैसे करें, और लिंकिंग स्टेटस कैसे जांचें।
             </p>
         </header>
 
         <article className="prose prose-lg dark:prose-invert max-w-none space-y-8">
           
-          <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
+          <div className="relative w-full h-56 sm:h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
             <Image
               src="https://images.unsplash.com/photo-1614741118884-85348d3b798b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW4lMjBhYWRoYWFyJTIwbGlua3xlbnwwfHx8fDE3NjE2MjQwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080"
               alt="PAN Card and Aadhaar Card"
@@ -160,7 +160,7 @@ export default function LinkAadhaarToPanPost() {
 
           <Card className="border-l-4 border-accent">
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 font-headline text-2xl">
+              <CardTitle className="flex items-center gap-3 font-headline text-xl sm:text-2xl">
                 <Info className="h-7 w-7 text-accent" />
                 पैन-आधार लिंक करना क्यों महत्वपूर्ण है?
               </CardTitle>
@@ -175,7 +175,7 @@ export default function LinkAadhaarToPanPost() {
             </CardContent>
           </Card>
 
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary">लिंक करने से पहले तैयारी</h2>
+          <h2 className="font-headline text-2xl sm:text-3xl font-bold tracking-tight text-primary">लिंक करने से पहले तैयारी</h2>
           <p>
             लिंकिंग प्रक्रिया शुरू करने से पहले, यह सुनिश्चित करें कि आपके पैन और आधार कार्ड पर आपका नाम, जन्मतिथि और लिंग (Gender) एक समान हैं। यदि कोई भिन्नता है, तो लिंकिंग विफल हो सकती है।
           </p>
@@ -184,12 +184,12 @@ export default function LinkAadhaarToPanPost() {
             <li><strong>आधार में सुधार:</strong> आधार कार्ड के विवरण को अपडेट करने के लिए <a href="https://myaadhaar.uidai.gov.in/" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">UIDAI</a> की आधिकारिक वेबसाइट पर जाएं।</li>
           </ul>
 
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary">विधि 1: आयकर विभाग की वेबसाइट से ऑनलाइन लिंक करें</h2>
+          <h2 className="font-headline text-2xl sm:text-3xl font-bold tracking-tight text-primary">विधि 1: आयकर विभाग की वेबसाइट से ऑनलाइन लिंक करें</h2>
           <p>
             यह पैन-आधार लिंक करने का सबसे आसान और सबसे आम तरीका है।
           </p>
 
-          <h3 className="font-headline text-2xl font-semibold">चरण 1: विलंब शुल्क (Late Fee) का भुगतान करें</h3>
+          <h3 className="font-headline text-xl sm:text-2xl font-semibold">चरण 1: विलंब शुल्क (Late Fee) का भुगतान करें</h3>
           <p>
             यदि आप निर्धारित तिथि के बाद लिंक कर रहे हैं, तो आपको ₹1,000 का विलंब शुल्क देना होगा।
           </p>
@@ -203,7 +203,7 @@ export default function LinkAadhaarToPanPost() {
             <li>भुगतान के बाद चालान को डाउनलोड करके सहेज लें। भुगतान को पोर्टल पर अपडेट होने में 4-5 दिन लग सकते हैं।</li>
           </ol>
 
-          <h3 className="font-headline text-2xl font-semibold mt-6">चरण 2: पैन को आधार से लिंक करें</h3>
+          <h3 className="font-headline text-xl sm:text-2xl font-semibold mt-6">चरण 2: पैन को आधार से लिंक करें</h3>
           <p>
             फीस भुगतान के 4-5 दिनों के बाद, आप लिंकिंग प्रक्रिया शुरू कर सकते हैं।
           </p>
@@ -228,14 +228,14 @@ export default function LinkAadhaarToPanPost() {
 
           <Card className="border-l-4 border-yellow-500">
             <CardHeader>
-              <CardTitle className="flex items-center gap-3 font-headline text-2xl">
+              <CardTitle className="flex items-center gap-3 font-headline text-xl sm:text-2xl">
                 <Smartphone className="h-7 w-7 text-yellow-500" />
                 विधि 2: SMS भेजकर पैन-आधार लिंक करें
               </CardTitle>
             </CardHeader>
             <CardContent>
               <p>यह सुविधा उन लोगों के लिए है जिनके पैन और आधार में कोई भिन्नता नहीं है और जिन्होंने पहले ही विलंब शुल्क का भुगतान कर दिया है।</p>
-              <div className="mt-4 p-4 bg-muted rounded-md font-mono text-sm">
+              <div className="mt-4 p-4 bg-muted rounded-md font-mono text-sm break-words">
                   <p className="font-bold">SMS फॉर्मेट:</p>
                   <p>UIDPAN &lt;12 अंकों का आधार नंबर&gt; &lt;10 अंकों का पैन नंबर&gt;</p>
               </div>
@@ -246,7 +246,7 @@ export default function LinkAadhaarToPanPost() {
           </Card>
 
 
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary">पैन-आधार लिंक स्टेटस कैसे जांचें?</h2>
+          <h2 className="font-headline text-2xl sm:text-3xl font-bold tracking-tight text-primary">पैन-आधार लिंक स्टेटस कैसे जांचें?</h2>
           <p>लिंकिंग अनुरोध सबमिट करने के कुछ दिनों बाद, आप यह जांच सकते हैं कि आपका पैन सफलतापूर्वक लिंक हुआ है या नहीं।</p>
           <ol className="list-decimal list-inside space-y-3 pl-4">
             <li>आयकर विभाग की वेबसाइट पर <a href="https://eportal.incometax.gov.in/iec/foservices/#/pre-login/link-aadhaar-status" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary">'Link Aadhaar Status'</a> पेज पर जाएं।</li>
@@ -255,7 +255,7 @@ export default function LinkAadhaarToPanPost() {
             <li>स्क्रीन पर आपका लिंकिंग स्टेटस दिख जाएगा, जैसे "Your PAN is already linked to given Aadhaar"।</li>
           </ol>
 
-          <h2 className="font-headline text-3xl font-bold tracking-tight text-primary">अक्सर पूछे जाने वाले प्रश्न (FAQ)</h2>
+          <h2 className="font-headline text-2xl sm:text-3xl font-bold tracking-tight text-primary">अक्सर पूछे जाने वाले प्रश्न (FAQ)</h2>
 
           <div className="space-y-4">
             <details className="p-4 border rounded-lg">

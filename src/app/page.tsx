@@ -11,13 +11,13 @@ export default function Home() {
     <>
       <header className="w-full bg-card shadow-sm sticky top-0 z-50">
         <div className="max-w-5xl mx-auto p-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3">
             <ShieldCheck className="h-8 w-8 text-primary" />
-            <h2 className="font-headline text-xl font-bold text-primary">
-              Unofficial PAN-Aadhaar Checker
+            <h2 className="font-headline text-lg sm:text-xl font-bold text-primary">
+              <span className="hidden sm:inline">Unofficial </span>PAN-Aadhaar Checker
             </h2>
           </Link>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1 sm:gap-2">
             <Button variant="ghost" asChild>
               <Link href="/blog">Blog</Link>
             </Button>
@@ -28,10 +28,10 @@ export default function Home() {
       <main className="flex min-h-dvh w-full flex-col items-center bg-background p-4 sm:p-6 md:p-8">
         <div className="w-full max-w-4xl mx-auto">
           <header className="text-center my-8 md:my-12">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl">
+            <h1 className="font-headline text-3xl sm:text-4xl font-bold tracking-tighter text-primary md:text-5xl">
               PAN-Aadhaar लिंकिंग स्टेटस कैसे चेक करें?
             </h1>
-            <p className="mt-3 max-w-2xl mx-auto text-muted-foreground md:text-lg">
+            <p className="mt-3 max-w-2xl mx-auto text-muted-foreground sm:text-base md:text-lg">
               जानें ऑनलाइन और SMS के माध्यम से अपने पैन कार्ड को आधार से लिंक करने की स्थिति की जाँच करने के आसान तरीके।
             </p>
           </header>
@@ -39,7 +39,7 @@ export default function Home() {
           <article className="space-y-8">
             <Card className="overflow-hidden shadow-lg">
               <CardHeader>
-                <CardTitle className="flex items-center gap-3 font-headline text-2xl">
+                <CardTitle className="flex items-center gap-3 font-headline text-xl sm:text-2xl">
                   <MousePointerClick className="h-7 w-7 text-accent" />
                   विधि 1: आधिकारिक वेबसाइट के माध्यम से
                 </CardTitle>
@@ -68,7 +68,7 @@ export default function Home() {
 
             <Card className="overflow-hidden shadow-lg">
               <CardHeader>
-                <CardTitle className="flex items-center gap-3 font-headline text-2xl">
+                <CardTitle className="flex items-center gap-3 font-headline text-xl sm:text-2xl">
                   <MessageSquareText className="h-7 w-7 text-accent" />
                   विधि 2: SMS भेजकर
                 </CardTitle>
@@ -77,7 +77,7 @@ export default function Home() {
                 <p>
                   यदि आपके पास इंटरनेट की सुविधा नहीं है, तो आप SMS के माध्यम से भी अपना पैन-आधार लिंकिंग स्टेटस जान सकते हैं। इसके लिए नीचे दिए गए प्रारूप में एक SMS भेजें:
                 </p>
-                <div className="p-4 bg-muted rounded-md font-mono text-sm">
+                <div className="p-4 bg-muted rounded-md font-mono text-sm break-words">
                   <p className="font-bold">SMS फॉर्मेट:</p>
                   <p>UIDPAN &lt;12 अंकों का आधार नंबर&gt; &lt;10 अंकों का पैन नंबर&gt;</p>
                 </div>
@@ -87,7 +87,7 @@ export default function Home() {
                 <p>
                   उदाहरण के लिए: यदि आपका आधार नंबर 123456789012 है और पैन नंबर ABCDE1234F है, तो आप SMS इस तरह भेजेंगे:
                 </p>
-                <div className="p-4 bg-muted rounded-md font-mono text-sm">
+                <div className="p-4 bg-muted rounded-md font-mono text-sm break-words">
                   <p>UIDPAN 123456789012 ABCDE1234F</p>
                 </div>
                 <p>

@@ -13,13 +13,13 @@ export default function BlogLayout({
     <>
       <header className="w-full bg-card shadow-sm sticky top-0 z-50">
         <div className="max-w-5xl mx-auto p-4 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-2 sm:gap-3">
             <ShieldCheck className="h-8 w-8 text-primary" />
-            <h2 className="font-headline text-xl font-bold text-primary">
-              Unofficial PAN-Aadhaar Checker
+            <h2 className="font-headline text-lg sm:text-xl font-bold text-primary">
+              <span className="hidden sm:inline">Unofficial </span>PAN-Aadhaar Checker
             </h2>
           </Link>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-1 sm:gap-4">
             <Button variant="ghost" asChild>
                 <Link href="/">Home</Link>
             </Button>

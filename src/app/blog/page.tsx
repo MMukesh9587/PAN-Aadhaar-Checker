@@ -12,10 +12,10 @@ export default function BlogPage() {
     <main className="flex min-h-dvh w-full flex-col items-center bg-background p-4 sm:p-6 md:p-8">
       <div className="w-full max-w-4xl mx-auto">
         <header className="text-center my-8 md:my-12">
-            <h1 className="font-headline text-4xl font-bold tracking-tighter text-primary sm:text-5xl">
+            <h1 className="font-headline text-3xl sm:text-4xl font-bold tracking-tighter text-primary sm:text-5xl">
                 अन्य महत्वपूर्ण जानकारी
             </h1>
-            <p className="mt-3 max-w-2xl mx-auto text-muted-foreground md:text-lg">
+            <p className="mt-3 max-w-2xl mx-auto text-muted-foreground sm:text-base md:text-lg">
               पैन, आधार और आयकर से संबंधित नवीनतम अपडेट और गाइड।
             </p>
         </header>
