@@ -2,9 +2,8 @@
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink, MessageSquareText, MousePointerClick, ShieldCheck } from 'lucide-react';
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import Link from 'next/link';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function Home() {
 
@@ -12,15 +11,18 @@ export default function Home() {
     <>
       <header className="w-full bg-card shadow-sm sticky top-0 z-50">
         <div className="max-w-5xl mx-auto p-4 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3">
             <ShieldCheck className="h-8 w-8 text-primary" />
             <h2 className="font-headline text-xl font-bold text-primary">
               Unofficial PAN-Aadhaar Checker
             </h2>
+          </Link>
+          <div className="flex items-center gap-2">
+            <Button variant="ghost" asChild>
+              <Link href="/blog">Blog</Link>
+            </Button>
+            <ThemeToggle />
           </div>
-          <Button variant="ghost" asChild>
-            <Link href="/blog">Blog</Link>
-          </Button>
         </div>
       </header>
       <main className="flex min-h-dvh w-full flex-col items-center bg-background p-4 sm:p-6 md:p-8">

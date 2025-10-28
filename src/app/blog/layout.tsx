@@ -2,6 +2,7 @@
 import { Button } from '@/components/ui/button';
 import { ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function BlogLayout({
   children,
@@ -25,6 +26,7 @@ export default function BlogLayout({
             <Button variant="secondary" asChild>
                 <Link href="/blog">Blog</Link>
             </Button>
+            <ThemeToggle />
           </div>
         </div>
       </header>
