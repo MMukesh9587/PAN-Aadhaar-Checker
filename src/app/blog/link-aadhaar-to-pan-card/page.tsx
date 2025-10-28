@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink, CheckCircle, AlertCircle, MessageSquare, Info, Smartphone, User, Calendar } from 'lucide-react';
 import Image from 'next/image';
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 
 export const metadata: Metadata = {
   title: 'PAN को Aadhaar से कैसे लिंक करें (2024 गाइड) | Link Aadhaar to PAN Card',
@@ -279,6 +280,23 @@ export default function LinkAadhaarToPanPost() {
             </details>
           </div>
 
+          <Card className="mt-12 bg-card">
+            <CardContent className="flex flex-col sm:flex-row items-center gap-6 pt-6">
+              <Avatar className="h-24 w-24">
+                <AvatarImage src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&q=80" alt="Mukesh Kumar Yogi" />
+                <AvatarFallback>MY</AvatarFallback>
+              </Avatar>
+              <div className='text-center sm:text-left'>
+                <h4 className="font-headline text-xl font-bold">लेखक के बारे में</h4>
+                <p className="font-semibold text-primary mt-1">मुकेश कुमार योगी</p>
+                <p className="mt-2 text-sm text-muted-foreground">
+                  मुकेश एक अनुभवी तकनीकी लेखक और वेब डेवलपर हैं जिन्हें जटिल विषयों को सरल और सुलभ भाषा में समझाने में विशेषज्ञता हासिल है। वह वित्तीय प्रौद्योगिकी और सरकारी सेवाओं से जुड़े विषयों पर लिखना पसंद करते हैं।
+                </p>
+              </div>
+            </CardContent>
+          </Card>
+
+
           <div className="text-center py-6 mt-8 text-sm text-muted-foreground">
             <p><strong>अस्वीकरण (Disclaimer):</strong> यह एक अनौपचारिक गाइड है और केवल सूचनात्मक उद्देश्यों के लिए है। हमेशा नवीनतम जानकारी और प्रक्रियाओं के लिए आधिकारिक आयकर विभाग की वेबसाइट देखें।</p>
           </div>
@@ -288,3 +306,5 @@ export default function LinkAadhaarToPanPost() {
     </main>
   );
 }
+
+    
