@@ -4,6 +4,30 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ExternalLink, MessageSquareText, MousePointerClick, ShieldCheck } from 'lucide-react';
 import Link from 'next/link';
 import { ThemeToggle } from '@/components/theme-toggle';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'पैन-आधार लिंकिंग स्टेटस ऑनलाइन चेक करें | Check PAN-Aadhaar Link Status (Unofficial)',
+  description: 'अपने पैन कार्ड का आधार से लिंकिंग स्टेटस तुरंत ऑनलाइन और SMS के माध्यम से जांचें। यह एक अनौपचारिक टूल है जो आपको पैन-आधार लिंकिंग की स्थिति जानने में मदद करता है।',
+  keywords: 'pan aadhaar link status, check pan aadhaar status, pan aadhaar link online, पैन आधार लिंक स्टेटस, पैन आधार लिंक कैसे चेक करें, unofficial pan aadhaar checker, pan aadhaar link, aadhaar pan link',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'पैन-आधार लिंकिंग स्टेटस ऑनलाइन चेक करें | Unofficial PAN-Aadhaar Link Checker',
+    description: 'जानें कि ऑनलाइन और SMS के माध्यम से अपने पैन कार्ड को आधार से लिंक करने की स्थिति की जाँच कैसे करें।',
+    url: '/',
+    images: [
+      {
+        url: 'https://images.unsplash.com/photo-1614741118884-85348d3b798b?w=1080&q=80&fit=max',
+        width: 1080,
+        height: 720,
+        alt: 'PAN and Aadhaar cards on a desk',
+      },
+    ],
+  }
+};
+
 
 export default function Home() {
 

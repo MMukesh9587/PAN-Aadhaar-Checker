@@ -4,9 +4,12 @@ import { Toaster } from "@/components/ui/toaster";
 import { ThemeProvider } from '@/components/theme-provider';
 
 export const metadata: Metadata = {
-  title: 'Online PAN-Aadhaar Link Checker (Unofficial)',
-  description: 'Check your PAN-Aadhaar linking status instantly with this unofficial tool. Verify if your PAN is linked with Aadhaar for educational and demo purposes. Keywords: check pan aadhaar link, pan aadhaar status, pan aadhaar link checker online, Unofficial PAN-Aadhaar Checker.',
-  keywords: "check pan aadhaar link, pan aadhaar status, pan aadhaar link checker online, Unofficial PAN-Aadhaar Checker",
+  title: {
+    template: '%s | Unofficial PAN-Aadhaar Checker',
+    default: 'Unofficial PAN-Aadhaar Checker',
+  },
+  description: 'An unofficial tool to check PAN-Aadhaar linking status, with helpful guides and articles on PAN and Aadhaar services.',
+  keywords: "check pan aadhaar link, pan aadhaar status, pan aadhaar link checker online, Unofficial PAN-Aadhaar Checker, pan card, aadhaar card",
 };
 
 export default function RootLayout({
