@@ -61,6 +61,13 @@ export default function Home() {
           </header>
 
           <article className="space-y-8">
+
+             <div className="prose prose-lg dark:prose-invert max-w-none text-center">
+              <p>
+                भारत सरकार ने टैक्स चोरी को रोकने और वित्तीय प्रणाली में पारदर्शिता लाने के लिए सभी नागरिकों के लिए अपने पैन कार्ड को आधार कार्ड से लिंक करना अनिवार्य कर दिया है। यदि आपका पैन आधार से लिंक नहीं है, तो यह निष्क्रिय हो सकता है, जिससे आपको ITR फाइलिंग, बैंक लेनदेन और अन्य वित्तीय कार्यों में समस्याओं का सामना करना पड़ सकता है। इसलिए, यह जांचना महत्वपूर्ण है कि आपका पैन और आधार लिंक हैं या नहीं।
+              </p>
+            </div>
+
             <Card className="overflow-hidden shadow-lg">
               <CardHeader>
                 <CardTitle className="flex items-center gap-3 font-headline text-xl sm:text-2xl">
@@ -70,14 +77,14 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-4 text-foreground/90">
                 <p>
-                  आप आयकर विभाग (Income Tax Department) की आधिकारिक ई-फाइलिंग वेबसाइट पर जाकर आसानी से अपना पैन-आधार लिंकिंग स्टेटस देख सकते हैं। नीचे दिए गए स्टेप्स का पालन करें:
+                  आप आयकर विभाग (Income Tax Department) की आधिकारिक ई-फाइलिंग वेबसाइट पर जाकर आसानी से अपना पैन-आधार लिंकिंग स्टेटस देख सकते हैं। यह सबसे सरल और विश्वसनीय तरीका है। नीचे दिए गए स्टेप्स का पालन करें:
                 </p>
                 <ol className="list-decimal list-inside space-y-2 pl-4">
-                  <li>आयकर विभाग की ई-फाइलिंग वेबसाइट पर जाएं।</li>
-                  <li>होम पेज पर 'Quick Links' सेक्शन में 'Link Aadhaar Status' पर क्लिक करें।</li>
+                  <li>सबसे पहले आयकर विभाग की आधिकारिक ई-फाइलिंग वेबसाइट पर जाएं।</li>
+                  <li>होम पेज पर 'Quick Links' (त्वरित लिंक्स) सेक्शन में जाएं और 'Link Aadhaar Status' पर क्लिक करें।</li>
                   <li>एक नया पेज खुलेगा जहाँ आपको अपना 10 अंकों का PAN नंबर और 12 अंकों का Aadhaar नंबर दर्ज करना होगा।</li>
-                  <li>विवरण भरने के बाद, 'View Link Aadhaar Status' बटन पर क्लिक करें।</li>
-                  <li>अगली स्क्रीन पर आपका लिंकिंग स्टेटस दिख जाएगा, जैसे — "Your PAN is already linked to given Aadhaar" या "PAN not linked with Aadhaar"।</li>
+                  <li>दोनों विवरण सही-सही भरने के बाद, 'View Link Aadhaar Status' बटन पर क्लिक करें।</li>
+                  <li>अगली स्क्रीन पर आपका लिंकिंग स्टेटस तुरंत दिख जाएगा। यदि वे लिंक हैं, तो "Your PAN is already linked to given Aadhaar" जैसा संदेश दिखाई देगा। यदि नहीं, तो आपको "PAN not linked with Aadhaar" जैसा संदेश मिलेगा।</li>
                 </ol>
                 <div className="pt-4">
                   <Button asChild>
@@ -99,14 +106,14 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-4 text-foreground/90">
                 <p>
-                  यदि आपके पास इंटरनेट की सुविधा नहीं है, तो आप SMS के माध्यम से भी अपना पैन-आधार लिंकिंग स्टेटस जान सकते हैं। इसके लिए नीचे दिए गए प्रारूप में एक SMS भेजें:
+                  यदि आपके पास इंटरनेट की सुविधा नहीं है या आप वेबसाइट का उपयोग नहीं करना चाहते हैं, तो आप SMS के माध्यम से भी अपना पैन-आधार लिंकिंग स्टेटस जान सकते हैं। यह प्रक्रिया भी बहुत आसान है।
                 </p>
                 <div className="p-4 bg-muted rounded-md font-mono text-sm break-words">
                   <p className="font-bold">SMS फॉर्मेट:</p>
                   <p>UIDPAN &lt;12 अंकों का आधार नंबर&gt; &lt;10 अंकों का पैन नंबर&gt;</p>
                 </div>
                 <p>
-                  इस SMS को <strong>567678</strong> या <strong>56161</strong> पर भेज दें।
+                  इस SMS को अपने रजिस्टर्ड मोबाइल नंबर से <strong>567678</strong> या <strong>56161</strong> पर भेज दें।
                 </p>
                 <p>
                   उदाहरण के लिए: यदि आपका आधार नंबर 123456789012 है और पैन नंबर ABCDE1234F है, तो आप SMS इस तरह भेजेंगे:
@@ -115,7 +122,7 @@ export default function Home() {
                   <p>UIDPAN 123456789012 ABCDE1234F</p>
                 </div>
                 <p>
-                  SMS भेजने के बाद, आपको एक जवाबी SMS में आपके लिंकिंग की स्थिति के बारे में जानकारी मिल जाएगी।
+                  SMS भेजने के कुछ ही देर बाद, आपको एक जवाबी SMS प्राप्त होगा जिसमें आपके लिंकिंग की स्थिति (linked or not linked) के बारे में जानकारी दी जाएगी।
                 </p>
               </CardContent>
             </Card>
