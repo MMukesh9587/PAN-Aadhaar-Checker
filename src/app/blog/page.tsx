@@ -19,7 +19,7 @@ export default function BlogPage() {
               पैन, आधार और आयकर से संबंधित नवीनतम अपडेट और गाइड।
             </p>
         </header>
-        <section className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <section className="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
           {blogPosts.map((post) => (
             <Card key={post.id} className="overflow-hidden shadow-lg flex flex-col">
               <Link href={post.url} className="group">
@@ -38,7 +38,7 @@ export default function BlogPage() {
                 </CardHeader>
               </Link>
               <CardContent className="flex-grow">
-                <p className="text-muted-foreground text-sm">यह एक डमी पोस्ट है। यहां पोस्ट का संक्षिप्त विवरण आएगा।</p>
+                <p className="text-muted-foreground text-sm line-clamp-2">यह पोस्ट आपको संबंधित विषय पर विस्तृत जानकारी प्रदान करता है। पूरी जानकारी के लिए पढ़ें।</p>
               </CardContent>
               <div className="p-6 pt-0">
                 <Button variant="outline" asChild>
