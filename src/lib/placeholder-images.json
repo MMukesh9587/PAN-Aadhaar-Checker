@@ -34,6 +34,13 @@
       "imageUrl": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmb3JtJTIwc3VibWlzc2lvbnxlbnwwfHx8fDE3NjE2MjgyMzV8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "form submission",
       "url": "/blog/apply-for-pan-card-online"
+    },
+    {
+      "id": "blog-6",
+      "description": "पैन कार्ड में सुधार कैसे करें: एक विस्तृत गाइड",
+      "imageUrl": "https://images.unsplash.com/photo-1518893560155-b89cac6db0c7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxkb2N1bWVudCUyMGNvcnJlY3Rpb258ZW58MHx8fHwxNzYxNjI1MDU3fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document correction",
+      "url": "/blog/pan-card-correction"
     }
   ]
 }
