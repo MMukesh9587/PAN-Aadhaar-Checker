@@ -276,14 +276,14 @@ export default function LinkAadhaarToPanPost() {
             </details>
             <details className="p-4 border rounded-lg">
                 <summary className="font-semibold cursor-pointer">5. अगर मेरे नाम, जन्मतिथि या जेंडर में भिन्नता है तो क्या करें?</summary>
-                <p className="mt-2 text-muted-foreground">यदि आपके पैन और आधार विवरण में कोई भिन्नता (mismatch) है, तो लिंकिंग विफल हो सकती है। लिंक करने से पहले, आपको संबंधित प्राधिकरण (NSDL/UTIITSL पैन के लिए या UIDAI आधार के लिए) के साथ अपने दस्तावेजों में सुधार करवाना होगा। सुधार के बाद ही लिंकिंग प्रक्रिया शुरू करें।</p>
+                <p className="mt-2 text-muted-foreground">यदि आपके पैन और आधार विवरण में कोई भिन्नता (mismatch) है, तो लिंकिंग विफल हो सकती है। लिंक करने से पहले, आपको संबंधित प्राधिकरण (NSDL/UTIITSL पैन के लिए या UIDAI आधार के लिए) के साथ अपने दस्तावेजों में सुधार करवाना होगा। सुधार के बाद ही लिinking प्रक्रिया शुरू करें।</p>
             </details>
           </div>
 
           <Card className="mt-12 bg-card">
             <CardContent className="flex flex-col sm:flex-row items-center gap-6 pt-6">
               <Avatar className="h-24 w-24">
-                <AvatarImage src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=200&q=80" alt="Mukesh Kumar Yogi" />
+                <AvatarImage src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg_BXmz0vq7Ke0_UTIVGnKxrlFUXzOU9jyv-EDwrtzR8Ib06sqbdm6D3BQMjOv4LHWhDjSi1G_9ELzDPOpGjm3U2GRNnRLc9-m4Sa_I-ByjJkXpuSHnaVwEWKCWRAS1vSdigM4mnvaEJttvytp-Anlb2-bndXVuhsTEXS3k94F-47EgnQVggQMtk_PYmmyB/s1712/Mukesh%20Kumar%20Yogi.jpg" alt="Mukesh Kumar Yogi" />
                 <AvatarFallback>MY</AvatarFallback>
               </Avatar>
               <div className='text-center sm:text-left'>
