@@ -4,19 +4,29 @@
       "id": "blog-1",
       "description": "पैन कार्ड को डीएक्टिवेट होने से कैसे बचाएं?",
       "imageUrl": "https://images.unsplash.com/photo-1709880945165-d2208c6ad2ec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHx0YXglMjBkb2N1bWVudHxlbnwwfHx8fDE3NjE2MTgyODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "tax document"
+      "imageHint": "tax document",
+      "url": "/blog/link-aadhaar-to-pan-card"
     },
     {
       "id": "blog-2",
       "description": "आधार कार्ड में अपना मोबाइल नंबर कैसे अपडेट करें?",
       "imageUrl": "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtb2JpbGUlMjBwaG9uZXxlbnwwfHx8fDE3NjE2MTgyODF8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "mobile phone"
+      "imageHint": "mobile phone",
+      "url": "#"
     },
     {
       "id": "blog-3",
       "description": "आयकर रिटर्न (ITR) फाइल करने की अंतिम तिथि",
       "imageUrl": "https://images.unsplash.com/photo-1714685490530-865e22e3f41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYWxlbmRhciUyMGRhdGV8ZW58MHx8fHwxNzYxNTkxODMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "calendar date"
+      "imageHint": "calendar date",
+      "url": "#"
+    },
+    {
+      "id": "blog-4",
+      "description": "PAN को Aadhaar से कैसे लिंक करें: एक विस्तृत गाइड",
+      "imageUrl": "https://images.unsplash.com/photo-1614741118884-85348d3b798b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW4lMjBhYWRoYWFyJTIwbGlua3xlbnwwfHx8fDE3NjE2MjQwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "document id",
+      "url": "/blog/link-aadhaar-to-pan-card"
     }
   ]
 }
