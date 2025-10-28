@@ -17,7 +17,6 @@ export const metadata: Metadata = {
     title: 'PAN को Aadhaar से कैसे लिंक करें (2024 गाइड) | Link Aadhaar to PAN Card',
     description: 'PAN को Aadhaar से लिंक करने की विस्तृत प्रक्रिया, फीस भुगतान, और स्टेटस जांचने के आसान तरीके जानें।',
     url: '/blog/link-aadhaar-to-pan-card',
-    type: 'article',
     images: [
       {
         url: 'https://images.unsplash.com/photo-1614741118884-85348d3b798b?w=1080&q=80&fit=max',
@@ -141,8 +140,8 @@ export default function LinkAadhaarToPanPost() {
           
           <div className="relative w-full h-56 sm:h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
             <Image
-              src="https://images.unsplash.com/photo-1614741118884-85348d3b798b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwYW4lMjBhYWRoYWFyJTIwbGlua3xlbnwwfHx8fDE3NjE2MjQwMDF8MA&ixlib=rb-4.1.0&q=80&w=1080"
-              alt="PAN Card and Aadhaar Card"
+              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgqRYsH-yB7weQ_5d0OpT0SHzdQhRo11SfuOZVvNRNC6XZOGLg1R5L-bEpxKu5pJXpWFqzCIYRqtlGN-plEx2C9BKrj0fwZpgahDy8MEck-JWbkX92j_XSEo9czMSX0Ic-l1ghKt-b52v7Xf3mvVHW2mm4vda-E5sSP2X1HYScnGdMoHIqre1LJ5_A1C_MG/s1664/1761620225.png.webp"
+              alt="PAN Card and Aadhaar Card Link Guide"
               fill
               style={{ objectFit: 'cover' }}
               data-ai-hint="document id"
