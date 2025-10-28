@@ -16,10 +16,10 @@
     },
     {
       "id": "blog-3",
-      "description": "आयकर रिटर्न (ITR) फाइल करने की अंतिम तिथि",
-      "imageUrl": "https://images.unsplash.com/photo-1714685490530-865e22e3f41f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxjYWxlbmRhciUyMGRhdGV8ZW58MHx8fHwxNzYxNTkxODMzfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "calendar date",
-      "url": "#"
+      "description": "NSDL पैन कार्ड: स्टेटस, डाउनलोड और सभी सेवाएं",
+      "imageUrl": "https://images.unsplash.com/photo-1556740758-90de374c12ad?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxvbmxpbmUlMjBwYXltZW50fGVufDB8fHx8MTc2MTgzMzM0NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "online payment",
+      "url": "/blog/nsdl-pan-card-services"
     },
     {
       "id": "blog-4",
