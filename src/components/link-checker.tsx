@@ -57,7 +57,7 @@ export function LinkChecker() {
             <CardHeader>
               <CardTitle className="font-headline text-2xl">Enter Your Details</CardTitle>
               <CardDescription>
-                Provide your PAN and Aadhaar number to check the linking status.
+                Provide your PAN and Aadhaar number to check the linking status. (Unofficial)
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
