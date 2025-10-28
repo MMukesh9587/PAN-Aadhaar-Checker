@@ -8,14 +8,14 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'UTI पैन कार्ड स्टेटस कैसे ट्रैक करें (2024 गाइड) | UTI PAN Card Status',
+  title: 'UTI पैन कार्ड स्टेटस कैसे ट्रैक करें (2026 गाइड) | UTI PAN Card Status',
   description: 'UTIITSL पोर्टल के माध्यम से अपने पैन कार्ड आवेदन का स्टेटस ऑनलाइन ट्रैक करने की पूरी प्रक्रिया जानें। कूपन नंबर या पैन नंबर से स्टेटस कैसे चेक करें, इसकी स्टेप-बाय-स्टेप गाइड।',
   keywords: 'uti pan card status, utiitsl pan status, track pan card uti, pan card status by coupon number, uti pan status check, पैन कार्ड स्टेटस यूटीआई, यूटीआईआईटीएसएल पैन स्टेटस',
   alternates: {
     canonical: '/blog/uti-pan-card-status-track',
   },
   openGraph: {
-    title: 'UTI पैन कार्ड स्टेटस कैसे ट्रैक करें (2024 गाइड) | UTI PAN Card Status',
+    title: 'UTI पैन कार्ड स्टेटस कैसे ट्रैक करें (2026 गाइड) | UTI PAN Card Status',
     description: 'इस गाइड से सीखें कि UTIITSL पोर्टल पर अपने नए या सुधारे गए पैन कार्ड आवेदन की स्थिति को आसानी से कैसे ट्रैक करें।',
     url: '/blog/uti-pan-card-status-track',
     images: [
@@ -32,7 +32,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
-  'headline': 'UTI पैन कार्ड स्टेटस कैसे ट्रैक करें: कूपन नंबर से पूरी गाइड (2024)',
+  'headline': 'UTI पैन कार्ड स्टेटस कैसे ट्रैक करें: कूपन नंबर से पूरी गाइड (2026)',
   'description': 'यह गाइड आपको UTIITSL (UTI) पोर्टल पर अपने पैन कार्ड आवेदन की स्थिति को ऑनलाइन ट्रैक करने की पूरी प्रक्रिया बताती है, जिसमें कूपन नंबर और पैन नंबर का उपयोग शामिल है।',
   'image': 'https://images.unsplash.com/photo-1599580419218-e3646d5c5dcb?w=1080&q=80&fit=max',  
   'author': {
@@ -117,7 +117,7 @@ export default function UtiPanStatusTrackPost() {
       <div className="w-full max-w-4xl mx-auto">
         <header className="text-center my-8 md:my-12">
             <h1 className="font-headline text-3xl sm:text-4xl font-bold tracking-tighter text-primary md:text-5xl">
-              UTI पैन कार्ड स्टेटस कैसे ट्रैक करें (2024 गाइड)
+              UTI पैन कार्ड स्टेटस कैसे ट्रैक करें (2026 गाइड)
             </h1>
             <div className="mt-4 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
                 <div className="flex items-center gap-2">
@@ -258,3 +258,4 @@ export default function UtiPanStatusTrackPost() {
   );
 }
 
+    
